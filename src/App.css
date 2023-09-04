@@ -1,38 +1,76 @@
 .App {
   text-align: center;
+  background-color: #101936;
+  display: flex;
+  justify-content: space-around;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.MuiBox-root{
+  background-color: #2195F1;
+  color:white;
+  border-radius:12px;
+  margin-top: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.MuiBox-root:first-child{
+  background-color: #683AB7;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
+  background-color: #19223F;
+}
+.MuiToolbar-root{
+  display: flex;
+  justify-content: center;
+  background-color: #101936;
+}
+.navBarElement{
+  font-size: 24px;
+  font-weight: bold;
+  color: #5A5E89;
+  margin-left: 30px;
+  list-style-type: none;
+  border-radius: 12px;
+  padding: 10px;
+}
+.navBarElement:hover{
+  color: white;
+  background-color: #5A5E89;
+  cursor: pointer;
+}
+.questionsContainer{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  margin-bottom: 10px;
+}
+.questionsContainer>div{
+  margin-top:10px;
+  margin-bottom:10px
+}
+.MuiAutocomplete-popper{
+  background-color: #5A5E89;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.MuiButtonBase-root{
+margin-bottom:20px !important;
+}
+.graphContainer{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height:600px;
+}
+.graphMenu{
+  display: flex;
+  justify-content: center;
+}
+.graphMenu>li{
+  color: white;
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.graphMenu>li:hover{
+  cursor:pointer;
+  color:#2195F1;
+  background-color: transparent !important;
 }
